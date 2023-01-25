@@ -37,7 +37,6 @@ void respond() {
         case 'r': new_rule();calc();plot();break;
         case ' ': flash();break;
         case 'q': stop_raw_mode();exit(0);break;
-        //case 'm': display_mode++; if (display_mode > 2) display_mode = 0;plot();break;
         case '=': cols++; if (cols >= max_cols) cols = 1;flash();break;
         case '+': cols--; if (cols < 0 ) cols = max_cols - 1;flash();break;
         case '-': rows++; if (rows >= max_rows) rows = 1;flash();break;
@@ -47,7 +46,6 @@ void respond() {
         case 'M': new_rule();mountain();break;
         case 's': states++; if (states > 3) states = 2; new_rule();flash();break;
         case 'l': len++; if (len > 9) len = 2;new_rule();flash();break;
-        //default : new_rule();calc();plot();break;
     }
     second_to_last_in = last_in;
     last_in = c;

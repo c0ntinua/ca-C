@@ -7,7 +7,6 @@ void cursor_to(int r, int c) {
 void hide_cursor() {
     printf("\x1b[?25l");
 }
-
 void set_color(int r, int g, int b) {
     printf("\x1b[38;2;%d;%d;%dm",r,g,b);
 }

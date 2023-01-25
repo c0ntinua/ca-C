@@ -50,13 +50,11 @@ void calc() {
 	}
 }
 void plot_pixel(int r, int c, int col) {
-	//cursor_to(r+2,c+2);
 	switch (display_mode) {
 		case 0 : print_block(cell[r][c]);break;
 		case 1 : print_symbol(cell[r][c]);break;
 		case 2 : printf("%d",cell[r][c]);break;
 	}
-	//cursor_to(r,c);
     
 }
 void plot_row(int r) {
@@ -103,7 +101,6 @@ void mountain() {
 	cell[0][cols/2] = rand()%states;
 	calc();
 	plot();
-
 }
 
 
